@@ -14,18 +14,14 @@ h1 {
 
 /* Стилі для меню */
 .menu {
-    display: flex;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .menu a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+    display: inline-block;
     color: #333;
 }
 
