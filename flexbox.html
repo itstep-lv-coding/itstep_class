@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body style="padding-bottom: 1000px;">
+        <!-- padding-bottom збільшує відступ знизу, щоб сторінка була довшою для демонстрації прокрутки -->
+
+        <h1> Flex</h1>
+        <div style="display: flex;
+          flex-direction: row;
+          margin: 20px;">
+            <!-- display: flex робить контейнер флекс-блоком, flex-direction: row розташовує елементи в один ряд -->
+            <div style=" background-color: lightblue;">
+                div 1
+            </div>
+            <div style="background-color: lightpink;">
+                div 2
+                <p>text</p>
+            </div>
+        </div>
+
+        <div style="display: flex;
+        flex-direction: row;
+        margin: 20px;">
+            <!-- знову використовується flex, елементи йдуть в ряд -->
+            <div style=" background-color: lightblue; width: 100px;">
+                div 1
+            </div>
+            <div style="background-color: lightpink; flex: 1;">
+                <!-- flex: 1 дозволяє цьому елементу займати весь доступний простір -->
+                flex 1
+                <p>text</p>
+            </div>
+        </div>
+
+        <div style="display: flex;
+      flex-direction: row;
+      margin: 20px;">
+            <div style=" background-color: lightblue; width: 100px;">
+                div 1
+            </div>
+            <div style="background-color: lightpink; flex: 1;">
+                flex 1
+                <p>text</p>
+            </div>
+            <div style="background-color: rgb(176, 153, 228); flex: 2;">
+                <!-- flex: 2 означає, що цей блок займе вдвічі більше місця порівняно з flex: 1 -->
+                flex 2
+                <p>text</p>
+            </div>
+        </div>
+
+        <div style="display: flex;
+    flex-direction: row;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(106, 75, 186);
+    padding: 5px;
+    justify-content: space-between;
+    margin: 20px;">
+            <!-- justify-content: space-between рівномірно розподіляє блоки з відступами між ними -->
+            <div style=" background-color: lightblue; width: 100px;">
+                100px
+            </div>
+            <div style="background-color: lightpink; width: 100px;">
+                100px
+                <p>text</p>
+            </div>
+            <div style="background-color: rgb(176, 153, 228); width: 100px;">
+                100px
+                <p>text</p>
+            </div>
+        </div>
+
+        <div style="display: flex;
+        flex-direction: row;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(106, 75, 186);
+        padding: 5px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;">
+            <!-- align-items: center вирівнює елементи по вертикалі по центру контейнера -->
+            <div style=" background-color: lightblue; width: 100px;">
+                div 1
+            </div>
+            <div style="background-color: lightpink; width: 100px;">
+                100px
+                <p>text</p>
+            </div>
+            <div style="background-color: rgb(176, 153, 228); width: 100px;">
+                100px
+                <p>text</p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
