@@ -20,20 +20,7 @@ h1 {
     text-align: center;
 }
 
-.menu a {
-    display: inline-block;
-    color: #333;
-}
 
-.menu a img {
-    width: 60px;
-    height: 60px;
-    transition: transform 0.3s ease;
-}
-
-.menu a:hover img {
-    transform: scale(1.1);
-}
 
 .main_column {
     display: grid;
