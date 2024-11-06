@@ -1,0 +1,61 @@
+.menu {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Згладжені кути */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для об'єму */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px; /* Відступи зверху, зліва і справа */
+    height: 100%; /* Повна висота екрану */
+    z-index: 120; /* Пріоритет відображення */
+}
+
+.menu_item {
+    text-align: center;
+    transition: transform 0.3s ease; /* Плавний ефект при наведенні */
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none; /* Прибирає підкреслення з посилань */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.menu a img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease; /* Плавне збільшення при наведенні */
+}
+
+.menu_item:hover {
+    transform: translateY(-5px); /* Легкий підйом при наведенні */
+}
+
+.menu_item img:hover {
+    transform: scale(1.1) rotate(5deg); /* Збільшення і поворот іконки при наведенні */
+}
+
+.menu_item p {
+    padding: 0;
+    font-size: 14px; /* Розмір тексту під іконками */
+    color: #555;
+}
+
+.welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #f9f9f9; /* Однаковий фон з меню */
+    padding: 7px 0; /* Відступи зверху і знизу */
+    z-index: 100; /* Менший пріоритет, ніж меню */
+    margin-top: 0;
+}
+
+body {
+    margin-top: 80px; /* Додає відступ, щоб текст не заходив за верхнє меню */
+    padding-left: 180px;
+}

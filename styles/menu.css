@@ -1,11 +1,17 @@
 .menu {
-    text-align: center;
-    /* Центрує меню */
     background-color: #f9f9f9;
-    padding: 15px 0;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+margin: 0;
 }
+
+.menu-item{
+    margin: 5px 0px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
 
 .menu a {
     color: #333;
@@ -21,22 +27,16 @@
     margin-bottom: 5px;
 }
 
-.menu_item {
-    display: inline-block;
-    margin: 10px 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
 
-.menu_item:hover {
+.menu-item:hover {
     transform: translateY(-5px);
 }
 
-.menu_item img:hover {
+.menu-item img:hover {
     transform: scale(1.1) rotate(5deg);
 }
 
-.menu_item p {
+.menu-item p {
     padding: 0;
     margin-top: -5px;
     font-size: 14px;
