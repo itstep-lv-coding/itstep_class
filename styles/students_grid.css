@@ -1,14 +1,16 @@
 .students-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 370px);
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows: repeat(2, 370px);
     gap: 10px;
-    margin: 100px;
+    margin: 10px;
 }
 
 @media  (max-width: 1200px) {
     .students-grid {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 370px);
+
     }
     
 }

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css" media="all" />
     <link rel="stylesheet" href="styles/students_grid.css" media="all" />
+    <link rel="stylesheet" href="styles/main_grid.css" media="all" />
     <link rel="stylesheet" href="styles/menu.css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +17,11 @@
   </head>
 
   <body>
-    <h1 class="welcome">Welcome to Our Class</h1>
-
     <div class="main-grid">
-      <div class="menu-grid">
+      <div class="main-header">
+        <h1>Welcome to Our Class</h1>
+      </div>
+      <div class="menu-grid main-menu">
         <div class="menu">
           <div class="menu-item">
             <a href="./pages/travels.html">
@@ -44,7 +46,7 @@
         </div>
       </div>
 
-      <div class="students-grid">
+      <div class="students-grid main-content">
         <div class="student">
           <img src="img/photo1.jpg" alt="Фото 1" />
           <h2>Петров Петро</h2>
@@ -92,7 +94,7 @@
         </div>
       </div>
 
-      <div class="footer-container">
+      <div class="footer-container main-footer">
         <a href="https://google.com" target="_blank">Наш YouTube канал</a>
         <input type="text" placeholder="Search" />
       </div>
